@@ -1101,18 +1101,185 @@ a#work-link:visited {
 }
 
 
+}
 
+/* Tablet (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1023px) {
 
+/* Styles */
 
+#background-container {
+    display: flex;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 102vw;
+    height: 102vh;
+    overflow: hidden;
+    background-color: black;
+}
 
+#navigation-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 10;
+    left: 10;
+    width: 93.7%;
+    height: 90.6%;
+    border-radius: 25px;
+    border: 1.5px solid black;
+    padding: 20px;
+}
 
+#landing-quote-copy {
+    position: absolute;
+    top: -4vh;
+    color: black;
+    font-family: "Digestive";
+    font-size: 75px;
+}
 
+#work-container {
+    /* display: flex; */
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: flex-start;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    height: 86%;
+    /* border: 1.5px solid black; */
+    z-index: 100;
+}
 
+#work-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-start;
+    width: 99%;
+    height: 90%;
+    /* border: 1.5px solid black; */
+    margin-bottom: 40px;
+}
 
+#work-title {
+    color: black;
+    font-family: "Swear-Display-Medium-Citali";
+    font-size: 40px;
+     margin-top: -10px; 
+}
 
+#work-role {
+    color: black;
+    font-family: "Degular-Light";
+    font-size: 18px;
+    margin-top: -5px;
+}
 
+#work-link {
+    color: black;
+    font-family: "Degular-Light";
+    font-size: 16px;
+}
 
+#about-container {
+    /* display: flex; */
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-start;
+    width: 100%;
+    height: 85%;
+    /* background-color: black; */
+    z-index: 100;
+}
 
+#profile-picture-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: flex-start;
+    width: 40%;
+    height: 100%;
+    /* border-radius: 25px; */
+    /* background-color: blue; */
+    margin-left: 5px;
+}
+
+#artist-statement {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: flex-start;
+    align-items: flex-start;
+    text-align: top;
+    width: 55%;
+    height: 100%;
+    /* background-color: blue; */
+    margin-right: 10px;
+}
+
+#statement-copy {
+    text-align: top;
+    margin-top: 0px;
+    color: black;
+    font-family: "Degular-Light";
+    font-size: 14;
+}
+
+#profile-picture-credits {
+    color: black;
+    font-family: "Degular-Light";
+    font-size: 14px;
+    cursor: pointer;
+    text-align: bottom;
+}
+
+#publication-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    width: 99%;
+    height: 12%;
+    /* background-color: green; */
+    border-bottom: 1.5px solid black;
+    cursor: pointer;
+}
+
+#publication-title {
+    color: black;
+    font-family: "Swear-Display-Display-Italic";
+    font-size: 20px;
+    width: 40%;
+    /* background-color: green; */
+    text-align: start;
+}
+
+#publicator {
+    color: black;
+    font-family: "Degular-Light";
+    font-size: 20px;
+    width: 35%;
+    /* background-color: red; */
+    text-align: start;
+}
+
+#publication-year {
+    color: black;
+    font-family: "Degular-Light";
+    font-size: 20px;
+    width: 16%;
+    /* background-color: blue; */
+    text-align: start;
+}
 
 
 
