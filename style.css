@@ -387,6 +387,8 @@ a:visited {
 	height: 90%;
 /*	border: 1.5px solid black;*/
 	margin-bottom: 40px;
+	opacity: 1;
+/*	transition: all 3s ease;*/
 }
 
 #work-image-container {
