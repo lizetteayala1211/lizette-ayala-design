@@ -566,7 +566,7 @@ a:visited {
 #work-title {
 	color: black;
 	font-family: "Swear-Display-Medium-Citali";
-	font-size: 60px;
+	font-size: 75px;
 	margin-top: -20px;
 }
 
@@ -584,7 +584,7 @@ margin-bottom: 40px;
 #work-role {
 	color: black;
 	font-family: "Degular-Light";
-	font-size: 22px;
+	font-size: 35px;
 	margin-top: -5px;	
 }
 
@@ -616,7 +616,7 @@ margin-bottom: 40px;
 #work-link {
 	color: black;
 	font-family: "Degular-Light";
-	font-size: 20px;
+	font-size: 30px;
 }
 
 #work-arrow {
