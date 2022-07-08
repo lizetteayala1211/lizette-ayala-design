@@ -629,6 +629,9 @@ margin-bottom: 40px;
     background-position: center;
     transform: rotate(-0.35turn);
     transition: all 0.5s ease;	
+    color: transparent;
+    align-self: center;
+    padding-top: 20px;
 }
 
 #work-arrow:hover {
@@ -1269,6 +1272,451 @@ a#work-link:visited {
     width: 16%;
     text-align: start;
 }
+
+
+}
+
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+/* Styles */
+
+/* Landing Page Styles */
+
+body {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#background-container {
+    display: flex;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: transparent !important; 
+}
+
+#background-video {
+    position: absolute;
+    top: -25vh;
+    height: auto;
+    width: auto;
+    transform: scale(1);
+    /* min-height: 100vh; */
+}
+
+#navigation-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 10;
+    left: 10;
+    width: 95%;
+    height: 95.8%;
+    border-radius: 25px;
+    border: 1.5px solid black;
+    padding: 0px;
+}
+
+#top-navigation-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-start;
+    width: 90%;
+    height: 10%;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 10px;
+    /* background-color: black; */
+}
+
+#navigation-link {
+    color: black;
+    font-size: 22px;
+    font-family: "Swear-Display-Display-Regular";
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+#navigation-link:hover {
+	color: black;
+	font-size: 22px;
+	cursor: pointer;
+ transform:skew(-15deg);
+}
+
+#landing-quote-copy {
+    position: absolute;
+    top: 5vh;
+    color: black;
+    font-family: "Digestive";
+    font-size: 50px;
+}
+
+#texas-icon-container {
+    position: absolute;
+    top: 32vh;
+    left: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 30%;
+    height: 60%;
+    /* background-color: green; */
+    background-image: url(./assets/icons/texas.png);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
+    /* opacity: 1; */
+    transition: blink 7s ease;
+    -moz-animation: blink normal 7s infinite ease;
+    -webkit-animation: blink normal 7s infinite ease;
+    -ms-animation: blink normal 7s infinite ease;
+    animation: blink normal 7s infinite ease;
+}
+
+#bottom-navigation-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: flex-start;
+    align-items: center;
+    /* align-content: center; */
+    flex-wrap: wrap;
+    width: 85%;
+    height: 12%;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 10px;
+    /* background-color: black; */
+}
+
+/* About Page Styles */
+
+#about-container {
+    /* display: flex; */
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: flex-start;
+    width: 100%;
+    height: 90%;
+    /* background-color: black; */
+    z-index: 100;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#profile-picture-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 90%;
+    height: 100%;
+    /* border-radius: 25px; */
+    /* background-color: blue; */
+    margin-left: 20px;
+    margin-right: 20px;
+    order: 2;
+}
+
+#profile-picture {
+    width: 75%;
+    height: 50vh;
+    border-radius: 25px;
+    border: 1.5px solid black;
+    background-image: url(./assets/images/profile-picture.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-self: center;
+}
+
+#profile-picture-credits {
+    color: black;
+    font-family: "Degular-Light";
+    font-size: 16px;
+    cursor: pointer;
+    text-align: bottom;
+    align-self: center;
+    margin-top: 5px;
+    margin-bottom: 40px;
+}
+
+
+#artist-statement {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    height: auto;
+    /* background-color: blue; */
+    margin-left: 20px;
+    margin-right: 20px;
+    order: 1;
+}
+
+#statement-copy {
+    text-align: center;
+    margin-top: 0px;
+    color: black;
+    font-family: "Degular-Light";
+    font-size: 18px;
+}
+
+/* Publications Page Styles */
+
+#publications-container {
+    /* display: flex; */
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 90%;
+    height: 90%;
+    /* background-color: black; */
+    /* border: 1.5px solid black; */
+    z-index: 100;
+    overflow-y: scroll;
+    overflow-x: hidden;
+/*    margin-left: 20px;
+    margin-right: 20px;*/
+}
+
+#publication-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    /* background-color: green; */
+    border-bottom: 1.5px solid black;
+    cursor: pointer;
+}
+
+a#publication {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    color: black;
+    text-decoration: none;
+    transform: none !important;
+}
+
+#publication-title {
+    color: black;
+    font-family: "Swear-Display-Display-Italic";
+    font-size: 18px;
+    width: 100%;
+    /* background-color: green; */
+    text-align: start;
+}
+
+#publicator {
+    color: black;
+    font-family: "Degular-Light";
+    font-size: 18px;
+    width: 75%;
+    /* background-color: red; */
+    text-align: end;
+}
+
+#publication-year {
+	display: none;
+    color: black;
+    font-family: "Degular-Light";
+    font-size: 18px;
+    width: auto;
+    /* background-color: blue; */
+    text-align: start;
+}
+
+#publication-link {
+	display: none;
+    /* background-color: black; */
+    width: 5%;
+    height: 100%;
+    cursor: pointer;
+    background-image: url(./assets/icons/publications-arrow.png);
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position: center;
+    transform: rotate(-0.35turn);
+    transition: all 0.5s ease;
+}
+
+/* Work Page Styles */
+
+#work-container {
+    /* display: flex; */
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    height: 90%;
+    /* border: 1.5px solid black; */
+    z-index: 100;
+}
+
+#work-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-content: center;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    /* border: 1.5px solid black; */
+    margin-bottom: 70px;
+    opacity: 1;
+    /* transition: all 3s ease; */
+}
+
+#work-content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 90%;
+    height: 100%;
+    /* border: 1.5px solid black; */
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#work-image-container {
+    width: 75%;
+    height: 50vh;
+    background-image: url(./assets/images/work/touch.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#work-content-title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    /* height: 35%; */
+    /* border: 1.5px solid black; */
+    text-align: center;
+}
+
+#work-title {
+    color: black;
+    font-family: "Swear-Display-Medium-Citali";
+    font-size: 30px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+#work-content-role-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
+    /* height: 30%; */
+    /* border: 1.5px solid black; */
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+#work-role {
+    color: black;
+    font-family: "Degular-Light";
+    font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#work-links-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: flex-start;
+    width: 100%;
+    height: auto;
+    /* border: 1.5px solid black; */
+}
+
+#work-link-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-start;
+    width: 100%;
+    height: auto;
+    border-bottom: 1.5px solid black;
+    cursor: pointer;
+}
+
+#work-link {
+    color: black;
+    font-family: "Degular-Light";
+    font-size: 18px;
+}
+
+#work-arrow {
+    width: 12%;
+    height: 100%;
+    cursor: pointer;
+    background-image: url(./assets/icons/publications-arrow.png);
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position: center;
+    transform: rotate(-0.35turn);
+    transition: all 0.5s ease;
+    color: transparent;
+    align-self: center;
+    padding-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
