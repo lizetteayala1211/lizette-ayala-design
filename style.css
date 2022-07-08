@@ -1434,16 +1434,27 @@ body {
     animation: blink normal 7s infinite ease;
 }
 
-#bottom-navigation-wrapper {
+/*#bottom-navigation-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-content: flex-start;
     align-items: center;
-    /* align-content: center; */
     flex-wrap: wrap;
     width: 85%;
     height: 12%;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 10px;
+}*/
+
+#bottom-navigation-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-start;
+    width: 90%;
+    height: 10%;
     margin-bottom: 10px;
     margin-left: 20px;
     margin-right: 10px;
