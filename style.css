@@ -386,10 +386,18 @@ a:visited {
 	width: 99%;
 	height: 90%;
 /*	border: 1.5px solid black;*/
-	margin-bottom: 40px;
+	margin-bottom: 70px;
 	opacity: 1;
 /*	transition: all 3s ease;*/
 }
+
+/*#work-row.twenty-six {
+	margin-bottom: 70px;
+}
+
+#work-row.twenty-five {
+	margin-bottom: 70px;
+}*/
 
 #work-image-container {
 	display: flex;	
@@ -398,6 +406,48 @@ a:visited {
 	border-radius: 25px;
 	background-color: black;	
 	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+#work-image-container.twenty-six {
+	background-image: url(./assets/images/work/lacey-lennon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;	
+}
+
+#work-image-container.twenty-five {
+	background-image: url(./assets/images/work/zoe-saldana.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;	
+}
+
+#work-image-container.twenty-four {
+	background-image: url(./assets/images/work/el-museo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;	
+}
+
+#work-image-container.twenty-three {
+	background-image: url(./assets/images/work/new-inc.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;	
+}
+
+#work-image-container.twenty-two {
+	background-image: url(./assets/images/work/julio-macias.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;	
+}
+
+#work-image-container.twenty-one {
+	background-image: url(./assets/images/work/michaela-j.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;	
 }
 
 #work-image-container.twenty {
@@ -1298,7 +1348,7 @@ body {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    background-color: transparent !important; 
+    background-color: black !important; 
 }
 
 #background-video {
@@ -1398,6 +1448,20 @@ body {
     margin-left: 20px;
     margin-right: 10px;
     /* background-color: black; */
+}
+
+#all-content-container {
+    position: absolute;
+    top: 8vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 95%;
+    height: 80.5%;
+    /* background-color: green; */
+    opacity: 1;
+    transition: opacity 6s ease;
 }
 
 /* About Page Styles */
