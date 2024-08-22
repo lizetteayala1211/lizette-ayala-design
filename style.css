@@ -788,6 +788,7 @@ a:visited {
 	border-radius: 25px;
 	background-color: black;	
 	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    cursor: pointer;
 }
 
 #work-image-container.twenty-eight {
@@ -798,6 +799,28 @@ a:visited {
     background-position: center;	
 }
 
+#work-image-fullscreen-container.twenty-eight {
+    display: none;
+  }
+  
+#work-image-fullscreen-container.twenty-eight.fullscreen {
+    display: flex;
+    z-index: 9999;
+    position: fixed;
+    margin: 0 auto;
+    width: 100% !important;
+    height: 100% !important;
+    top: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.7);	
+    background-image: url(./assets/images/work/DOMESTICANX.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;	
+    border-radius: 0px;
+    cursor: pointer;
+  }
+
 #work-image-container.twenty-seven {
 	background-image: url(./assets/images/work/lizette-ayala-mtv.JPG);
     background-repeat: no-repeat;
@@ -805,11 +828,55 @@ a:visited {
     background-position: center;	
 }
 
+#work-image-fullscreen-container.twenty-seven {
+    display: none;
+  }
+  
+#work-image-fullscreen-container.twenty-seven.fullscreen {
+    display: flex;
+    z-index: 9999;
+    position: fixed;
+    margin: 0 auto;
+    width: 100% !important;
+    height: 100% !important;
+    top: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.7);	
+    background-image: url(./assets/images/work/lizette-ayala-mtv.JPG);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;	
+    border-radius: 0px;
+    cursor: pointer;
+  }
+
 #work-image-container.twenty-six {
 	background-image: url(./assets/images/work/lacey-lennon.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;	
+}
+
+#work-image-fullscreen-container.twenty-six {
+    display: none;
+  }
+  
+#work-image-fullscreen-container.twenty-six.fullscreen {
+    display: flex;
+    z-index: 9999;
+    position: fixed;
+    margin: 0 auto;
+    width: 100% !important;
+    height: 100% !important;
+    top: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.7);	
+    background-image: url(./assets/images/work/lacey-lennon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;	
+    border-radius: 0px;
+    cursor: pointer;
 }
 
 #work-image-container.twenty-five {
@@ -819,11 +886,55 @@ a:visited {
     background-position: center top;	
 }
 
+#work-image-fullscreen-container.twenty-five {
+    display: none;
+  }
+  
+#work-image-fullscreen-container.twenty-five.fullscreen {
+    display: flex;
+    z-index: 9999;
+    position: fixed;
+    margin: 0 auto;
+    width: 100% !important;
+    height: 100% !important;
+    top: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.7);	
+    background-image: url(./assets/images/work/zoe-saldana.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;	
+    border-radius: 0px;
+    cursor: pointer;
+}
+
 #work-image-container.twenty-four {
 	background-image: url(./assets/images/work/el-museo.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;	
+}
+
+#work-image-fullscreen-container.twenty-four {
+    display: none;
+  }
+  
+#work-image-fullscreen-container.twenty-four.fullscreen {
+    display: flex;
+    z-index: 9999;
+    position: fixed;
+    margin: 0 auto;
+    width: 100% !important;
+    height: 100% !important;
+    top: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.7);	
+    background-image: url(./assets/images/work/el-museo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;	
+    border-radius: 0px;
+    cursor: pointer;
 }
 
 #work-image-container.twenty-three {
@@ -833,11 +944,55 @@ a:visited {
     background-position: center top;	
 }
 
+#work-image-fullscreen-container.twenty-three {
+    display: none;
+  }
+  
+#work-image-fullscreen-container.twenty-three.fullscreen {
+    display: flex;
+    z-index: 9999;
+    position: fixed;
+    margin: 0 auto;
+    width: 100% !important;
+    height: 100% !important;
+    top: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.7);	
+    background-image: url(./assets/images/work/new-inc.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;	
+    border-radius: 0px;
+    cursor: pointer;
+}
+
 #work-image-container.twenty-two {
 	background-image: url(./assets/images/work/julio-macias.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;	
+}
+
+#work-image-fullscreen-container.twenty-two {
+    display: none;
+  }
+  
+#work-image-fullscreen-container.twenty-two.fullscreen {
+    display: flex;
+    z-index: 9999;
+    position: fixed;
+    margin: 0 auto;
+    width: 100% !important;
+    height: 100% !important;
+    top: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.7);	
+    background-image: url(./assets/images/work/julio-macias.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;	
+    border-radius: 0px;
+    cursor: pointer;
 }
 
 #work-image-container.twenty-one {
@@ -847,11 +1002,55 @@ a:visited {
     background-position: center top;	
 }
 
+#work-image-fullscreen-container.twenty-one {
+    display: none;
+  }
+  
+#work-image-fullscreen-container.twenty-one.fullscreen {
+    display: flex;
+    z-index: 9999;
+    position: fixed;
+    margin: 0 auto;
+    width: 100% !important;
+    height: 100% !important;
+    top: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.7);	
+    background-image: url(./assets/images/work/michaela-j.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;	
+    border-radius: 0px;
+    cursor: pointer;
+}
+
 #work-image-container.twenty {
 	background-image: url(./assets/images/work/touch.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;	
+}
+
+#work-image-fullscreen-container.twenty {
+    display: none;
+  }
+  
+#work-image-fullscreen-container.twenty.fullscreen {
+    display: flex;
+    z-index: 9999;
+    position: fixed;
+    margin: 0 auto;
+    width: 100% !important;
+    height: 100% !important;
+    top: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.7);	
+    background-image: url(./assets/images/work/touch.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;	
+    border-radius: 0px;
+    cursor: pointer;
 }
 
 #work-image-container.nineteen {
@@ -861,11 +1060,55 @@ a:visited {
     background-position: center;	
 }
 
+#work-image-fullscreen-container.nineteen {
+    display: none;
+  }
+  
+#work-image-fullscreen-container.nineteen.fullscreen {
+    display: flex;
+    z-index: 9999;
+    position: fixed;
+    margin: 0 auto;
+    width: 100% !important;
+    height: 100% !important;
+    top: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.7);	
+    background-image: url(./assets/images/work/skin-contact.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;	
+    border-radius: 0px;
+    cursor: pointer;
+}
+
 #work-image-container.eighteen {
 	background-image: url(./assets/images/work/solace.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;	
+}
+
+#work-image-fullscreen-container.eighteen {
+    display: none;
+  }
+  
+#work-image-fullscreen-container.eighteen.fullscreen {
+    display: flex;
+    z-index: 9999;
+    position: fixed;
+    margin: 0 auto;
+    width: 100% !important;
+    height: 100% !important;
+    top: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.7);	
+    background-image: url(./assets/images/work/solace.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;	
+    border-radius: 0px;
+    cursor: pointer;
 }
 
 #work-image-container.seventeen {
@@ -875,11 +1118,55 @@ a:visited {
     background-position: start;	
 }
 
+#work-image-fullscreen-container.seventeen {
+    display: none;
+  }
+  
+#work-image-fullscreen-container.seventeen.fullscreen {
+    display: flex;
+    z-index: 9999;
+    position: fixed;
+    margin: 0 auto;
+    width: 100% !important;
+    height: 100% !important;
+    top: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.7);	
+    background-image: url(./assets/images/work/kali-uchis.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;	
+    border-radius: 0px;
+    cursor: pointer;
+}
+
 #work-image-container.sixteen {
 	background-image: url(./assets/images/work/community-cookbook.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;	
+}
+
+#work-image-fullscreen-container.sixteen {
+    display: none;
+  }
+  
+#work-image-fullscreen-container.sixteen.fullscreen {
+    display: flex;
+    z-index: 9999;
+    position: fixed;
+    margin: 0 auto;
+    width: 100% !important;
+    height: 100% !important;
+    top: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.7);	
+    background-image: url(./assets/images/work/community-cookbook.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;	
+    border-radius: 0px;
+    cursor: pointer;
 }
 
 #work-image-container.fifteen {
@@ -889,11 +1176,55 @@ a:visited {
     background-position: center;	
 }
 
+#work-image-fullscreen-container.fifteen {
+    display: none;
+  }
+  
+#work-image-fullscreen-container.fifteen.fullscreen {
+    display: flex;
+    z-index: 9999;
+    position: fixed;
+    margin: 0 auto;
+    width: 100% !important;
+    height: 100% !important;
+    top: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.7);	
+    background-image: url(./assets/images/work/cauleen-smith.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;	
+    border-radius: 0px;
+    cursor: pointer;
+}
+
 #work-image-container.fourteen {
 	background-image: url(./assets/images/work/playground-radio.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;	
+}
+
+#work-image-fullscreen-container.fourteen {
+    display: none;
+  }
+  
+#work-image-fullscreen-container.fourteen.fullscreen {
+    display: flex;
+    z-index: 9999;
+    position: fixed;
+    margin: 0 auto;
+    width: 100% !important;
+    height: 100% !important;
+    top: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.7);	
+    background-image: url(./assets/images/work/playground-radio.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;	
+    border-radius: 0px;
+    cursor: pointer;
 }
 
 #work-image-container.thirteen {
@@ -903,6 +1234,28 @@ a:visited {
     background-position: center;	
 }
 
+#work-image-fullscreen-container.thirteen {
+    display: none;
+  }
+  
+#work-image-fullscreen-container.thirteen.fullscreen {
+    display: flex;
+    z-index: 9999;
+    position: fixed;
+    margin: 0 auto;
+    width: 100% !important;
+    height: 100% !important;
+    top: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.7);	
+    background-image: url(./assets/images/work/other-publishing.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;	
+    border-radius: 0px;
+    cursor: pointer;
+}
+
 #work-image-container.twelve {
 	background-image: url(./assets/images/work/ftp.png);
     background-repeat: no-repeat;
@@ -910,11 +1263,55 @@ a:visited {
     background-position: center;	
 }
 
+#work-image-fullscreen-container.twelve {
+    display: none;
+  }
+  
+#work-image-fullscreen-container.twelve.fullscreen {
+    display: flex;
+    z-index: 9999;
+    position: fixed;
+    margin: 0 auto;
+    width: 100% !important;
+    height: 100% !important;
+    top: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.7);	
+    background-image: url(./assets/images/work/ftp.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;	
+    border-radius: 0px;
+    cursor: pointer;
+}
+
 #work-image-container.eleven {
 	background-image: url(./assets/images/work/museo.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;	
+}
+
+#work-image-fullscreen-container.eleven {
+    display: none;
+  }
+  
+#work-image-fullscreen-container.eleven.fullscreen {
+    display: flex;
+    z-index: 9999;
+    position: fixed;
+    margin: 0 auto;
+    width: 100% !important;
+    height: 100% !important;
+    top: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.7);	
+    background-image: url(./assets/images/work/museo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;	
+    border-radius: 0px;
+    cursor: pointer;
 }
 
 #work-image-container.ten {
@@ -931,11 +1328,55 @@ a:visited {
     background-position: center;	
 }
 
+#work-image-fullscreen-container.nine {
+    display: none;
+  }
+  
+#work-image-fullscreen-container.nine.fullscreen {
+    display: flex;
+    z-index: 9999;
+    position: fixed;
+    margin: 0 auto;
+    width: 100% !important;
+    height: 100% !important;
+    top: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.7);	
+    background-image: url(./assets/images/work/footlocker.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;	
+    border-radius: 0px;
+    cursor: pointer;
+}
+
 #work-image-container.eight {
 	background-image: url(./assets/images/work/NY6.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;	
+}
+
+#work-image-fullscreen-container.eight {
+    display: none;
+  }
+  
+#work-image-fullscreen-container.eight.fullscreen {
+    display: flex;
+    z-index: 9999;
+    position: fixed;
+    margin: 0 auto;
+    width: 100% !important;
+    height: 100% !important;
+    top: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.7);	
+    background-image: url(./assets/images/work/NY6.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;	
+    border-radius: 0px;
+    cursor: pointer;
 }
 
 #work-image-container.seven {
@@ -945,11 +1386,55 @@ a:visited {
     background-position: center;	
 }
 
+#work-image-fullscreen-container.seven {
+    display: none;
+  }
+  
+#work-image-fullscreen-container.seven.fullscreen {
+    display: flex;
+    z-index: 9999;
+    position: fixed;
+    margin: 0 auto;
+    width: 100% !important;
+    height: 100% !important;
+    top: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.7);	
+    background-image: url(./assets/images/work/anti-parsing.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;	
+    border-radius: 0px;
+    cursor: pointer;
+}
+
 #work-image-container.six {
 	background-image: url(./assets/images/work/the-question.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;	
+}
+
+#work-image-fullscreen-container.six {
+    display: none;
+  }
+  
+#work-image-fullscreen-container.six.fullscreen {
+    display: flex;
+    z-index: 9999;
+    position: fixed;
+    margin: 0 auto;
+    width: 100% !important;
+    height: 100% !important;
+    top: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.7);	
+    background-image: url(./assets/images/work/the-question.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;	
+    border-radius: 0px;
+    cursor: pointer;
 }
 
 #work-image-container.five {
@@ -959,11 +1444,55 @@ a:visited {
     background-position: center;	
 }
 
+#work-image-fullscreen-container.five {
+    display: none;
+  }
+  
+#work-image-fullscreen-container.five.fullscreen {
+    display: flex;
+    z-index: 9999;
+    position: fixed;
+    margin: 0 auto;
+    width: 100% !important;
+    height: 100% !important;
+    top: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.7);	
+    background-image: url(./assets/images/work/museum-of-capitalism.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;	
+    border-radius: 0px;
+    cursor: pointer;
+}
+
 #work-image-container.four {
 	background-image: url(./assets/images/work/earth.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;	
+}
+
+#work-image-fullscreen-container.four {
+    display: none;
+  }
+  
+#work-image-fullscreen-container.four.fullscreen {
+    display: flex;
+    z-index: 9999;
+    position: fixed;
+    margin: 0 auto;
+    width: 100% !important;
+    height: 100% !important;
+    top: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.7);	
+    background-image: url(./assets/images/work/earth.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;	
+    border-radius: 0px;
+    cursor: pointer;
 }
 
 #work-image-container.three {
@@ -973,11 +1502,55 @@ a:visited {
     background-position: center;	
 }
 
+#work-image-fullscreen-container.three {
+    display: none;
+  }
+  
+#work-image-fullscreen-container.three.fullscreen {
+    display: flex;
+    z-index: 9999;
+    position: fixed;
+    margin: 0 auto;
+    width: 100% !important;
+    height: 100% !important;
+    top: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.7);	
+    background-image: url(./assets/images/work/historical.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;	
+    border-radius: 0px;
+    cursor: pointer;
+}
+
 #work-image-container.two {
 	background-image: url(./assets/images/work/food.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;	
+}
+
+#work-image-fullscreen-container.two {
+    display: none;
+  }
+  
+#work-image-fullscreen-container.two.fullscreen {
+    display: flex;
+    z-index: 9999;
+    position: fixed;
+    margin: 0 auto;
+    width: 100% !important;
+    height: 100% !important;
+    top: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.7);	
+    background-image: url(./assets/images/work/food.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;	
+    border-radius: 0px;
+    cursor: pointer;
 }
 
 #work-image-container.one {
@@ -987,6 +1560,27 @@ a:visited {
     background-position: center;	
 }
 
+#work-image-fullscreen-container.one {
+    display: none;
+  }
+  
+#work-image-fullscreen-container.one.fullscreen {
+    display: flex;
+    z-index: 9999;
+    position: fixed;
+    margin: 0 auto;
+    width: 100% !important;
+    height: 100% !important;
+    top: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.7);	
+    background-image: url(./assets/images/work/state-of-exception.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;	
+    border-radius: 0px;
+    cursor: pointer;
+}
 
 #work-content-container {
 	display: flex;
