@@ -111,8 +111,8 @@ body {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 90%;
-	height: 90.5% !important;
+	width: 95%;
+	height: 90% !important;
 	border-radius: 25px;
   	border: 1.5px solid black;
   	/* padding: 10px; */
@@ -1788,17 +1788,21 @@ margin-bottom: 40px;
 	align-items: center;
 	text-align: center;
 	width: 99%;
-	height: 100%;
+	height: fit-content;
 /*	background-color: green;*/
 	border-bottom: 1.5px solid black;
 	cursor: pointer;
+}
+
+#publication {
+    padding: 10px;
 }
 
 #publication-title {
 	color: black;
 	font-family: "Swear-Display-Display-Italic";
 	font-size: 22px;	
-	width: 44%;
+	width: 44% !important;
 /*	background-color: green;*/
 	text-align: start;
 }
@@ -1916,7 +1920,7 @@ a#work-link:visited {
 
 
 /* Large screens 1440px ----------- */
-@media only screen  and (min-width : 1440px) {
+@media only screen and (min-width: 1280px) {
 
 /*** Styles ***/
 
@@ -1929,7 +1933,7 @@ a#work-link:visited {
     top: 15;
     left: 15;
     width: 95%;
-    height: 92.5%;
+    height: 94%;
     border-radius: 25px;
     border: 1.5px solid black;
     padding: 20px;
@@ -1952,7 +1956,7 @@ a#work-link:visited {
 
 #landing-quote-copy {
     position: absolute;
-    top: -1vh;
+    /* top: -1vh; */
     color: black;
     font-family: "Degular-Light";
     font-size: 45px;
