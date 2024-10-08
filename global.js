@@ -124,6 +124,14 @@ $(".personal-link").click(function(){
 
   /*	work imgs expand ;*/
 
+/*** image 29 ***/ 
+$('*[data-work-image="29"]').click(function(e) {
+  $('#work-image-fullscreen-container.twenty-nine').toggleClass('fullscreen');
+});
+$('#work-image-fullscreen-container.twenty-nine').click(function(e) {
+  $(this).toggleClass('fullscreen');
+});
+
 /*** image 28 ***/ 
 $('*[data-work-image="28"]').click(function(e) {
   $('#work-image-fullscreen-container.twenty-eight').toggleClass('fullscreen');

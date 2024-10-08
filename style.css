@@ -791,6 +791,36 @@ a:visited {
     cursor: pointer;
 }
 
+#work-image-container.twenty-nine {
+	background-image: url(./assets/images/work/work/DHG.png);
+	background-color: #423e3c;
+    background-repeat: repeat-y;
+    background-size: contain;
+    background-position: center;	
+}
+
+#work-image-fullscreen-container.twenty-nine {
+    display: none;
+  }
+  
+#work-image-fullscreen-container.twenty-nine.fullscreen {
+    display: flex;
+    z-index: 9999;
+    position: fixed;
+    margin: 0 auto;
+    width: 100% !important;
+    height: 100% !important;
+    top: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.7);	
+    background-image: url(./assets/images/work/work/DHG.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;	
+    border-radius: 0px;
+    cursor: pointer;
+  }
+
 #work-image-container.twenty-eight {
 	background-image: url(./assets/images/work/DOMESTICANX.png);
 	background-color: #c1ce5b;
