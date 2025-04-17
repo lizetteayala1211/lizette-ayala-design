@@ -3,7 +3,7 @@
     <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'"> -->
 
     <!-- Theme Color for Chrome, Firefox OS and Opera -->
     <meta name="theme-color" content="#4285f4">
@@ -30,8 +30,7 @@
     <meta name="theme-color" content="#ffffff"> -->
 
     <link rel="stylesheet" href="./styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
-    <script type="text/javascript" src="global.js"></script>
+    <!-- <script type="text/javascript" src="global.js"></script> -->
 
 </head>
 <body class="2025-version">
@@ -39,10 +38,29 @@
 <!-- Website Header/Navigation -->
     <div class="header">
         <a href="#default" class="logo">Lizette Ayala</a>
+        <!-- <div class="scroll-wrap">
+            <p>Digital</p>
+            <p class="scroll-text">
+                <span>Designer</span>
+                <span>Technologist</span>
+                <span>Archivist</span>
+            </p>
+        </div> -->
+
+        <div class="scroll-wrap">
+            <div class="animated-text">
+                <span>Designer</span>
+                <span>Technologist</span>
+                <span>Archivist</span>
+            </div>
+        </div>
+
         <div class="header-right">
-            <a class="active" href="#home">Home</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
+            <div class="menu-container">
+                <a class="menu active" href="#menu">
+                    <span class="dot"></span>
+                    &nbsp;&nbsp;MENU</a>
+            </div>
         </div>
     </div>
 
