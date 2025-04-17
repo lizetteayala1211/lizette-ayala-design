@@ -33,7 +33,7 @@ body {
   /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
   .header a.logo {
 	font-family: "Parable-Display-Regular";
-	font-size: 25px;
+	font-size: 45px;
 	font-weight: bold;
 	color: #E2E3E4;
   }
