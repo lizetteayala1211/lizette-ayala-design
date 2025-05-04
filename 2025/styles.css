@@ -18,11 +18,15 @@ body {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
+	width: 100%;
+    margin: 0px;
     background-color: #141313;
 }
 
 .landing {
 	overflow: hidden;
+	width: 100%;
+    margin: 0px;
 }
 
 /********* HEADER *********/
@@ -227,7 +231,7 @@ body {
 	position: absolute;
 	top: 125px;
 	background-color:blue;
-	background-image: linear-gradient(to bottom, rgba(20, 19, 19, 1) 0%, rgba(20, 19, 19, 0.35) 59%, rgba(20, 19, 19, 0) 100%), url('/2025/assets/images/third-texture-process.png');
+	background-image: linear-gradient(to bottom, rgba(20, 19, 19, 1) 0%, rgba(20, 19, 19, 0.35) 60%, rgba(20, 19, 19, 0) 100%), url('/2025/assets/images/third-texture-process.png');
 	background-size: cover;
 	width: 100%; 
 	height: 84%; 
@@ -257,6 +261,71 @@ body {
   /* <!-- Tablet Device CSS --> */  
 
   @media only screen and (min-width: 641px) and (max-width: 961px) {
+
+/********* HEADER *********/
+
+	.header {
+		/* overflow: hidden; */
+		background-color: #141313;
+		/* background-color: blue; */
+		width: 97%;
+		height: 10%;
+		padding: 20px 10px;
+		z-index: 500;
+	}
+
+	/* Float the menu section to the right */
+	.header-right {
+		float: right;
+		position: relative;
+		right: 10px;
+		pointer-events: visible;
+	}
+
+/********* SCROLLING TEXT *********/	
+
+	.title-container {
+		position: absolute;
+		left: 40px;
+		top: 75px;
+		display: flex	;
+		color: #E2E3E4;
+		font-size: 16px;
+		/* font-family: "Parable-Text-Regular"; */
+		font-family: monospace;
+	}
+
+  /********* LANDING FULLBLEED IMG *********/
+
+	.full-bleed-img {
+		position: absolute;
+		top: 125px;
+		background-color: blue;
+		background-image: linear-gradient(to bottom, rgba(20, 19, 19, 1) 0%, rgba(20, 19, 19, 0.55) 59%, rgba(20, 19, 19, 0) 100%), url(/2025/assets/images/third-texture-process.png);
+		background-size: cover;
+		width: 100%;
+		height: 85%;
+		max-width: 100%;
+		max-height: 100%;
+	}
+
+
+/********* PLACEHOLDER TEXT *********/	
+	.giant-text {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		position: fixed;
+		color: #E2E3E4;
+		/* font-family: "Parable-Display-Regular"; */
+		/* font-family: "Parable-Text-Regular"; */
+		font-family: "Millionaire-Script";
+		font-size: 2.5em;
+		text-align: center;
+		line-height: 125%;
+		margin-top: 200px;
+	}
 	
   }
 
@@ -264,10 +333,173 @@ body {
 
   @media only screen and (min-width: 375px) and (max-device-width : 481px) {
 
+	/********* HEADER *********/
+
+	.header {
+		/* overflow: hidden; */
+		background-color: #141313;
+		/* background-color: blue; */
+		width: 95%;
+		height: 10%;
+		padding: 20px 10px;
+		z-index: 500;
+	}
+
+	.header a.logo {
+		font-family: "Parable-Display-Regular";
+		font-size: 34px;
+		/* font-weight: bold; */
+		color: #E2E3E4;
+	}
+
+	/* Float the menu section to the right */
+	.header-right {
+		float: right;
+		position: relative;
+		right: 10px;
+		pointer-events: visible;
+	}
+
+/********* SCROLLING TEXT *********/	
+
+	.title-container {
+        position: absolute;
+        left: 10px;
+        top: 68px;
+        display: flex;
+        color: #E2E3E4;
+        font-size: 12px;
+        /* font-family: "Parable-Text-Regular"; */
+        font-family: monospace;
+    }
+
+  /********* LANDING FULLBLEED IMG *********/
+
+	.full-bleed-img {
+		position: absolute;
+		top: 125px;
+		background-color: blue;
+		background-image: linear-gradient(to bottom, rgba(20, 19, 19, 1) 0%, rgba(20, 19, 19, 0.65) 60%, rgba(20, 19, 19, 0) 100%), url(/2025/assets/images/third-texture-process.png);
+		background-size: cover;
+		width: 100%;
+		height: 85%;
+		max-width: 100%;
+		max-height: 100%;
+	}
+
+
+/********* PLACEHOLDER TEXT *********/	
+	.giant-text {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		position: fixed;
+		color: #E2E3E4;
+		/* font-family: "Parable-Display-Regular"; */
+		/* font-family: "Parable-Text-Regular"; */
+		font-family: "Millionaire-Script";
+		font-size: 2.8em;
+		text-align: center;
+		line-height: 145%;
+		margin-top: 100px;
+	}
+
   }
 
 /* <!-- Mobile Device CSS (X-Small Screens) --> */ 
 
-@media only screen and (min-width: 320px) and (max-device-width : 374px) {
+@media only screen and (min-width: 320px) and (max-device-width : 376px) {
+
+
+	/********* HEADER *********/
+
+	.header {
+		/* overflow: hidden; */
+		background-color: #141313;
+		/* background-color: blue; */
+		width: 94%;
+		height: 10%;
+		padding: 20px 10px;
+		z-index: 500;
+	}
+
+	.header a.logo {
+		font-family: "Parable-Display-Regular";
+		font-size: 30px;
+		/* font-weight: bold; */
+		color: #E2E3E4;
+	}
+
+	/* Float the menu section to the right */
+	.header-right {
+		float: right;
+		position: relative;
+		right: 10px;
+		pointer-events: visible;
+	}
+
+/********* SCROLLING TEXT *********/	
+
+	.title-container {
+        position: absolute;
+        left: 8px;
+        top: 68px;
+        display: flex;
+        color: #E2E3E4;
+        font-size: 12px;
+        /* font-family: "Parable-Text-Regular"; */
+        font-family: monospace;
+    }
+
+	.scroll-wrap {
+		height: 38px;
+		overflow: hidden;
+		text-align: center;
+		/* margin-top: 50px; */
+	}
+
+	.scroll-text span {
+		display: block;
+		font-size: 15px;
+		/* font-family: "Parable-Text-Regular"; */
+		font-family: monospace;
+		padding-top: 8px;
+		padding-bottom: 8px;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+  /********* LANDING FULLBLEED IMG *********/
+
+	.full-bleed-img {
+		position: absolute;
+		top: 125px;
+		background-color: blue;
+		background-image: linear-gradient(to bottom, rgba(20, 19, 19, 1) 0%, rgba(20, 19, 19, 0.65) 60%, rgba(20, 19, 19, 0) 100%), url(/2025/assets/images/third-texture-process.png);
+		background-size: cover;
+		width: 100%;
+		height: 85%;
+		max-width: 100%;
+		max-height: 100%;
+	}
+
+
+/********* PLACEHOLDER TEXT *********/	
+	.giant-text {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		position: fixed;
+		color: #E2E3E4;
+		/* font-family: "Parable-Display-Regular"; */
+		/* font-family: "Parable-Text-Regular"; */
+		font-family: "Millionaire-Script";
+		font-size: 2.8em;
+		text-align: center;
+		line-height: 145%;
+		margin-top: 100px;
+	}
 
 }
