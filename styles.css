@@ -373,6 +373,10 @@ body {
         font-family: monospace;
     }
 
+	.scroll-wrap {
+		display: none; /* FIX RESPONSIVENESS */
+	}
+
   /********* LANDING FULLBLEED IMG *********/
 
 	.full-bleed-img {
@@ -426,7 +430,7 @@ body {
 
 	.header a.logo {
 		font-family: "Parable-Display-Regular";
-		font-size: 26px;
+		font-size: 26px !important;
 		/* font-weight: bold; */
 		color: #E2E3E4;
 	}
@@ -453,6 +457,7 @@ body {
     }
 
 	.scroll-wrap {
+		display: none; /* FIX RESPONSIVENESS */
 		height: 38px;
 		overflow: hidden;
 		text-align: center;
