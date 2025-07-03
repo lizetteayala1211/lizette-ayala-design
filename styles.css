@@ -339,7 +339,7 @@ body {
 		/* overflow: hidden; */
 		background-color: #141313;
 		/* background-color: blue; */
-		width: 95%;
+		width: 100%;
 		height: 10%;
 		padding: 20px 10px;
 		z-index: 500;
@@ -412,7 +412,7 @@ body {
 		font-size: 2.8em;
 		text-align: center;
 		line-height: 145%;
-		margin-top: 100px;
+		margin-top: 50px;
 	}
 
   }
