@@ -32,75 +32,69 @@ body {
 /********* HEADER *********/
 
 .header {
-	/* overflow: hidden; */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	background-color: #141313;
-	/* background-color: blue; */
 	width: 100%;
-	height: 10%;
-  	padding: 20px 10px;
+	padding: 20px 16px;
 	z-index: 500;
+	box-sizing: border-box;
 }
 
 /* Style the header links */
 .header a {
-	float: left;
-	color: black;
-	text-align: center;
-	padding: 12px;
-	text-decoration: none;
-	font-size: 18px;
-	line-height: 20px;
-	border-radius: 4px;
-  }
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 20px;
+  border-radius: 4px;
+}
   
   /* Style the logo link */
-  .header a.logo {
-	font-family: "Parable-Display-Regular";
-	font-size: 45px;
-	/* font-weight: bold; */
-	color: #E2E3E4;
-  }
+.header a.logo {
+  font-family: "Parable-Display-Regular";
+  font-size: 34px;
+  color: #E2E3E4;
+  white-space: nowrap; /* prevents line break in "Lizette Ayala" */
+}
   
   /* Float the menu section to the right */
-  .header-right {
-	float: right;
-	position: relative;
-	right: 32px;
-	pointer-events: visible;
-  }
+.header-right {
+  pointer-events: auto;
+}
 
 /********* MENU BUTTON *********/
 
-  .header a.menu-button {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	/* background-color: #616264; */
-	background-color: #1A1C19;
-	border-radius: 25px;
-	padding-left: 30px;
-	padding-right: 30px;
-	pointer-events: visible;
-	font-family: "Parable-Text-Regular";
-	font-size: 16px;
-	font-weight: bold;
-	color: #E2E3E4;
-	transition: 0.3s;
-  }
+.header a.menu-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1A1C19;
+  border-radius: 25px;
+  padding: 10px 24px;
+  font-family: "Parable-Text-Regular";
+  font-size: 16px;
+  font-weight: bold;
+  color: #E2E3E4;
+  transition: 0.3s;
+  white-space: nowrap;
+}
 
   /* .header a.menu-button:hover {
 	background-color: #616264c0;
 	color: #e2e3e4be;
   } */
 
-  .dot {
-	height: 13px;
-	width: 13px;
-	/* background-color: #aeae31; */
-	background-color: #5A603C;
-	border-radius: 50%;
-	display: block;
-  }
+.dot {
+  height: 13px;
+  width: 13px;
+  background-color: #5A603C;
+  border-radius: 50%;
+  display: block;
+  margin-right: 8px;
+}
 
 /********* NAVIGATION BAR *********/
 
@@ -151,8 +145,8 @@ body {
 
   .title-container {
 	position: absolute;
-	left: 50px;
-	top: 80px;
+	left: 5px;
+	top: 70px;
 	display: flex;
 	color: #E2E3E4;
 	font-size: 16px;
@@ -164,7 +158,6 @@ body {
 	height: 40px;
 	overflow: hidden;
 	text-align: center;
-	/* margin-top: 50px; */
 		&:before {
 			top: 0;
   			left: 0;
@@ -189,11 +182,8 @@ body {
 
   .scroll-text {
 	display: inline-block;
-	/* transition: 300ms all; */
 	transition:.5s;
-	/* margin-top: 0; */
 	animation: slide 6s infinite alternate ease-in-out;
-	/* background-color: purple; */
 	background-color: rgb(20, 19, 19);
 	color: #E2E3E4;
    }
@@ -201,7 +191,6 @@ body {
 .scroll-text span {
 	display: block;
 	font-size: 16px;
-	/* font-family: "Parable-Text-Regular"; */
 	font-family: monospace;
 	padding-top: 8px;
 	padding-bottom: 8px;
@@ -228,34 +217,39 @@ body {
   /********* LANDING FULLBLEED IMG *********/
 
 .full-bleed-img {
-	position: absolute;
-	top: 125px;
-	/* background-color:blue; */
-	background-image: linear-gradient(to bottom, rgba(20, 19, 19, 1) 0%, rgba(20, 19, 19, 0.35) 60%, rgba(20, 19, 19, 0) 100%), url('/assets/images/third-texture-process.png');
-	background-size: cover;
-	width: 100%; 
-	height: 84%; 
-	max-width: 100%; 
-	max-height: 100%;
+  position: relative;
+  margin-top: 0; /* no longer needed */
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(20, 19, 19, 1) 0%,
+      rgba(20, 19, 19, 0.35) 60%,
+      rgba(20, 19, 19, 0) 100%
+    ),
+    url('/assets/images/third-texture-process.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
 }
 
 /********* PLACEHOLDER TEXT *********/
 
 .giant-text {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	position: fixed;
-	color: #E2E3E4;
-	/* font-family: "Parable-Display-Regular"; */
-	/* font-family: "Parable-Text-Regular"; */
-	font-family: "Millionaire-Script";
-	font-size: 3.5em;
-	text-align: center;
-	line-height: 120%;
-	margin-top: 200px;
-  }
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0 16px;
+  color: #E2E3E4;
+  font-family: "Millionaire-Script";
+  font-size: clamp(2em, 5vw, 3.5em);
+  text-align: center;
+  line-height: 1.3;
+  z-index: 10;
+}
 
 
   /* <!-- Tablet Device CSS --> */  
@@ -297,17 +291,23 @@ body {
 
   /********* LANDING FULLBLEED IMG *********/
 
-	.full-bleed-img {
-		position: absolute;
-		top: 125px;
-		background-color: blue;
-		background-image: linear-gradient(to bottom, rgba(20, 19, 19, 1) 0%, rgba(20, 19, 19, 0.55) 59%, rgba(20, 19, 19, 0) 100%), url(/assets/images/third-texture-process.png);
-		background-size: cover;
-		width: 100%;
-		height: 85%;
-		max-width: 100%;
-		max-height: 100%;
-	}
+.full-bleed-img {
+  position: relative;
+  margin-top: 125px; /* matches previous top offset */
+  width: 100%;
+  height: calc(100vh - 125px); /* dynamic height minus the header */
+  background-image: linear-gradient(
+      to bottom,
+      rgba(20, 19, 19, 1) 0%,
+      rgba(20, 19, 19, 0.35) 60%,
+      rgba(20, 19, 19, 0) 100%
+    ),
+    url('/assets/images/third-texture-process.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
 
 
 /********* PLACEHOLDER TEXT *********/	
@@ -379,17 +379,23 @@ body {
 
   /********* LANDING FULLBLEED IMG *********/
 
-	.full-bleed-img {
-		position: absolute;
-		top: 125px;
-		/* background-color: blue; */
-		background-image: linear-gradient(to bottom, rgba(20, 19, 19, 1) 0%, rgba(20, 19, 19, 0.65) 60%, rgba(20, 19, 19, 0) 100%), url(/assets/images/third-texture-process.png);
-		background-size: cover;
-		width: 100%;
-		height: 85%;
-		max-width: 100%;
-		max-height: 100%;
-	}
+.full-bleed-img {
+  position: relative;
+  margin-top: 125px; /* matches previous top offset */
+  width: 100%;
+  height: calc(100vh - 125px); /* dynamic height minus the header */
+  background-image: linear-gradient(
+      to bottom,
+      rgba(20, 19, 19, 1) 0%,
+      rgba(20, 19, 19, 0.35) 60%,
+      rgba(20, 19, 19, 0) 100%
+    ),
+    url('/assets/images/third-texture-process.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
 
 
 /********* PLACEHOLDER TEXT *********/	
@@ -477,17 +483,23 @@ body {
 
   /********* LANDING FULLBLEED IMG *********/
 
-	.full-bleed-img {
-		position: absolute;
-		top: 125px;
-		/* background-color: blue; */
-		background-image: linear-gradient(to bottom, rgba(20, 19, 19, 1) 0%, rgba(20, 19, 19, 0.65) 60%, rgba(20, 19, 19, 0) 100%), url(/assets/images/third-texture-process.png);
-		background-size: cover;
-		width: 100%;
-		height: 85%;
-		max-width: 100%;
-		max-height: 100%;
-	}
+.full-bleed-img {
+  position: relative;
+  margin-top: 125px; /* matches previous top offset */
+  width: 100%;
+  height: calc(100vh - 125px); /* dynamic height minus the header */
+  background-image: linear-gradient(
+      to bottom,
+      rgba(20, 19, 19, 1) 0%,
+      rgba(20, 19, 19, 0.35) 60%,
+      rgba(20, 19, 19, 0) 100%
+    ),
+    url('/assets/images/third-texture-process.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
 
 
 /********* PLACEHOLDER TEXT *********/	
