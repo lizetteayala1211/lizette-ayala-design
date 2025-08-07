@@ -626,6 +626,10 @@ body {
     font-size: 1.2rem;
 }
 
+.publication-years {
+  background-color: white; /* or #fff */
+}
+
 .section-title {
     max-width: 94%;
     padding-top: 0px;
