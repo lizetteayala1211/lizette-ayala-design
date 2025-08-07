@@ -579,7 +579,11 @@ body {
 .publications-grid, .publication-row {
     /* grid-template-columns: 26% 45% 10%;  */
 	grid-template-columns: 25% 50% 13% 7%;
-    padding: 0 5%;
+    /* padding: 0 5%; */
+	padding-top: 0px;
+    padding-right: 6%;
+    padding-bottom: 0px;
+	padding-left: 0%;
     margin: 0 auto;
 }
 
