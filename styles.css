@@ -550,6 +550,11 @@ body {
 
 /********* PUBLICATIONS SECTION *********/
 
+#publications {
+  margin-top: 0;
+  padding-top: 0rem; /* Or whatever spacing feels balanced */
+}
+
 .publications-section {
     position: absolute;
     top: 75%;
