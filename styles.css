@@ -24,7 +24,7 @@ body {
 }
 
 .landing {
-	overflow: hidden;
+	/* overflow: hidden; */
 	width: 100%;
     margin: 0px;
 }
@@ -44,61 +44,56 @@ body {
 
 /* Style the header links */
 .header a {
-  color: black;
-  text-align: center;
-  text-decoration: none;
-  font-size: 18px;
-  line-height: 20px;
-  border-radius: 4px;
+	color: black;
+	text-align: center;
+	text-decoration: none;
+	font-size: 18px;
+	line-height: 20px;
+	border-radius: 4px;
 }
   
   /* Style the logo link */
 .header a.logo {
-  font-family: "Parable-Display-Regular";
-  font-size: 34px;
-  color: #E2E3E4;
-  white-space: nowrap; /* prevents line break in "Lizette Ayala" */
+	font-family: "Parable-Display-Regular";
+	font-size: 34px;
+	color: #E2E3E4;
+ 	white-space: nowrap; /* prevents line break in "Lizette Ayala" */
 }
   
-  /* Float the menu section to the right */
+/* Float the menu section to the right */
 .header-right {
-  pointer-events: auto;
+	pointer-events: auto;
 }
 
 /********* MENU BUTTON *********/
 
 .header a.menu-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #1A1C19;
-  border-radius: 25px;
-  padding: 10px 24px;
-  font-family: "Parable-Text-Regular";
-  font-size: 16px;
-  font-weight: bold;
-  color: #E2E3E4;
-  transition: 0.3s;
-  white-space: nowrap;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #1A1C19;
+	border-radius: 25px;
+	padding: 10px 24px;
+	font-family: "Parable-Text-Regular";
+	font-size: 16px;
+	font-weight: bold;
+	color: #E2E3E4;
+	transition: 0.3s;
+	white-space: nowrap;
 }
 
-  /* .header a.menu-button:hover {
-	background-color: #616264c0;
-	color: #e2e3e4be;
-  } */
-
 .dot {
-  height: 13px;
-  width: 13px;
-  background-color: #5A603C;
-  border-radius: 50%;
-  display: block;
-  margin-right: 8px;
+	height: 13px;
+	width: 13px;
+	background-color: #5A603C;
+	border-radius: 50%;
+	display: block;
+	margin-right: 8px;
 }
 
 /********* NAVIGATION BAR *********/
 
-  .navigation-bar {
+.navigation-bar {
 	display: none;
 	flex-direction: row;
 	justify-content: center;
@@ -112,38 +107,38 @@ body {
    	text-align: center;
 	pointer-events: visible;
 	font-family: "Parable-Text-Regular";
-  }
+}
 
-  .navigation-link {
+.navigation-link {
 	color: #E2E3E4;
 	text-decoration: none;
 	font-size: 16px;
 	text-transform: uppercase;
 	transition: 0.3s;
-  }
+}
 
-  .navigation-link:hover { 
+.navigation-link:hover { 
 	/* color: #E2E3E4; */
 	color: #e2e3e4be;
 	text-decoration: none;
 	font-size: 16px;
-  }
+}
 
-  .navigation-link:active { 
+.navigation-link:active { 
 	color: #E2E3E4;
 	text-decoration: none;
 	font-size: 16px;
-  }
+}
 
-  .navigation-link:visited { 
+.navigation-link:visited { 
 	color: #E2E3E4;
 	text-decoration: none;
 	font-size: 16px;
-  }
+}
 
 /********* SCROLLING TEXT *********/
 
-  .title-container {
+.title-container {
 	position: absolute;
 	left: 5px;
 	top: 70px;
@@ -152,9 +147,9 @@ body {
 	font-size: 16px;
 	/* font-family: "Parable-Text-Regular"; */
 	font-family: monospace;
-  }
+}
 
-  .scroll-wrap {
+.scroll-wrap {
 	height: 40px;
 	overflow: hidden;
 	text-align: center;
@@ -178,15 +173,15 @@ body {
 			position: absolute;
 			background: linear-gradient(180deg, rgba(255, 142, 113, 0), #141313);
 		}
-   }
+}
 
-  .scroll-text {
+.scroll-text {
 	display: inline-block;
 	transition:.5s;
 	animation: slide 6s infinite alternate ease-in-out;
 	background-color: rgb(20, 19, 19);
 	color: #E2E3E4;
-   }
+}
 
 .scroll-text span {
 	display: block;
@@ -195,8 +190,7 @@ body {
 	padding-top: 8px;
 	padding-bottom: 8px;
 	padding-left: 5px;
-	padding-right: 5px;
-	
+	padding-right: 5px;	
 }
 
 @keyframes slide{
@@ -214,24 +208,40 @@ body {
   	50%{opacity:1}
   }
 
-  /********* LANDING FULLBLEED IMG *********/
+/********* LANDING FULLBLEED IMG *********/
 
-.full-bleed-img {
+.hero-stack {
   position: relative;
-  margin-top: 0; /* no longer needed */
   width: 100%;
-  height: 100vh;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(20, 19, 19, 1) 0%,
-      rgba(20, 19, 19, 0.35) 60%,
-      rgba(20, 19, 19, 0) 100%
-    ),
+  min-height: 200vh; /* Or however tall it needs to be to fit both hero wrappers */
+}
+
+.hero-wrapper {
+  background-image:
+    linear-gradient(to bottom, rgba(20, 19, 19, 1) 0%, rgba(20, 19, 19, 0.35) 60%, rgba(20, 19, 19, 0) 100%),
     url('/assets/images/third-texture-process.png');
   background-size: cover;
-  background-position: center;
+  background-position: center top;
   background-repeat: no-repeat;
-  z-index: -1;
+  width: 100%;
+  height: 100vh;
+}
+
+.hero-wrapper.flipped {
+  transform: rotate(180deg);
+}
+
+/* Seam softener */
+.hero-wrapper.flipped::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(to bottom, rgba(20, 19, 19, 0.8), rgba(20, 19, 19, 0));
+  pointer-events: none;
+  z-index: 1;
 }
 
 /********* PLACEHOLDER TEXT *********/
@@ -251,258 +261,450 @@ body {
   z-index: 10;
 }
 
+/********* PUBLICATIONS SECTION *********/
 
-  /* <!-- Tablet Device CSS --> */  
+#publications {
+  margin-top: 0;
+  padding-top: 4rem; /* Or whatever spacing feels balanced */
+}
 
-  @media only screen and (min-width: 641px) and (max-width: 961px) {
+.publications-section {
+  position: absolute;
+  top: 57%; /* Adjust as needed */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 100%;
+  max-width: 950px;
+  padding: 80px 16px;
+  background-color: transparent;
+}
+
+.section-title {
+  font-family: "Millionaire-Script";
+  font-size: 32px;
+  color: #E2E3E4;
+  margin-bottom: 32px;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.publications-grid,
+.publication-row {
+  display: grid;
+  grid-template-columns: 25% 50% 80px 164px; 
+  /* org, title, year, arrow */
+  gap: 0.5rem 1rem;
+  overflow-x: visible;
+}
+
+/* Header Labels */
+.publications-grid {
+  font-family: "Parable-Text-Regular";
+  font-size: 14px;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+}
+
+.publication-header {
+  padding-bottom: 8px;
+}
+
+/* Entry Rows */
+.publication-row {
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #3a3a3a;
+  transition: background 0.3s;
+}
+
+.publication-cell {
+  font-family: "Parable-Text-Regular";
+  font-size: 16px;
+  color: #E2E3E4;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.publication-title {
+  margin-right: 2.5rem; /* 👈 adds breathing space before year */
+}
+
+.publication-title, .publication-organization {
+  line-height: 1.5;
+  padding-bottom: 0.25rem;
+}
+
+.publication-year {
+  /* font-family: "Millionaire-Script"; */
+  font-size: 16px;
+}
+
+.publication-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #777;
+}
+
+/* Arrow Link */
+.publication-link {
+  display: inline-block;
+  color: #E2E3E4;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.publication-row:hover .publication-link {
+  transform: translateX(4px);
+}
+
+/* Arrow styling */
+.arrow {
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+  font-size: 18px;
+  color: #E2E3E4;
+}
+
+/* Hover effect on the arrow */
+.publication-link:hover .arrow {
+  transform: translateX(4px);
+  color: #A3A69B; /* optional subtle color shift */
+}
+
+
+/* <!-- Tablet Device CSS --> */  
+
+@media only screen and (min-width: 641px) and (max-width: 961px) {
 
 /********* HEADER *********/
 
-	.header {
-		/* overflow: hidden; */
-		background-color: #141313;
-		/* background-color: blue; */
-		width: 100%;
-		height: 10%;
-		padding: 20px 10px;
-		z-index: 500;
-	}
+.header {
+	/* overflow: hidden; */
+	background-color: #141313;
+	/* background-color: blue; */
+	width: 100%;
+	height: 10%;
+	padding: 20px 10px;
+	z-index: 500;
+}
 
-	/* Float the menu section to the right */
-	.header-right {
-		float: right;
-		position: relative;
-		right: 0px;
-		pointer-events: visible;
-	}
+/* Float the menu section to the right */
+.header-right {
+	float: right;
+	position: relative;
+	right: 0px;
+	pointer-events: visible;
+}
 
 /********* SCROLLING TEXT *********/	
 
-	.title-container {
-		position: absolute;
-		left: 0px;
-		top: 75px;
-		display: flex	;
-		color: #E2E3E4;
-		font-size: 16px;
-		/* font-family: "Parable-Text-Regular"; */
-		font-family: monospace;
-	}
-
-  /********* LANDING FULLBLEED IMG *********/
-
-.full-bleed-img {
-  position: relative;
-  margin-top: 125px; /* matches previous top offset */
-  width: 100%;
-  height: calc(100vh - 125px); /* dynamic height minus the header */
-  background-image: linear-gradient(
-      to bottom,
-      rgba(20, 19, 19, 1) 0%,
-      rgba(20, 19, 19, 0.35) 60%,
-      rgba(20, 19, 19, 0) 100%
-    ),
-    url('/assets/images/third-texture-process.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: -1;
+.title-container {
+	position: absolute;
+	left: 0px;
+	top: 75px;
+	display: flex	;
+	color: #E2E3E4;
+	font-size: 16px;
+	/* font-family: "Parable-Text-Regular"; */
+	font-family: monospace;
 }
 
+/********* PUBLICATIONS SECTION *********/
 
-/********* PLACEHOLDER TEXT *********/	
-	.giant-text {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: 100%;
-		position: fixed;
-		color: #E2E3E4;
-		/* font-family: "Parable-Display-Regular"; */
-		/* font-family: "Parable-Text-Regular"; */
-		font-family: "Millionaire-Script";
-		font-size: 2.5em;
-		text-align: center;
-		line-height: 125%;
-		margin-top: 200px;
-	}
+.publications-section {
+	top: 75%;
+	max-width: 550px;
+}
+
+.section-title {
+    max-width: 950px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.publications-grid, .publication-row {
+    grid-template-columns: 28% 45% 14% auto; 
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Allow org + title to wrap nicely */
+.publication-cell:nth-child(1),
+.publication-cell:nth-child(2) {
+    white-space: normal;
+    word-wrap: break-word;
+    line-height: 1.5;
+}
+
+.publication-cell:nth-child(4) {
+	justify-self: center; /* Center arrow */
+    align-self: center;
+}
+
+/* Ensure titles wrap nicely */
+.publication-title {
+    margin-right: 0.75rem; /* breathing room before arrow */
+    line-height: 1.5;
+}
+
+.publication-cell {
+    font-size: 14px;
+}
+
+.section-title {
+    font-size: 24px;
+}
+
+.publication-title {
+    line-height: 1.5;
+    padding-bottom: 0.5rem;
+    margin-right: 0.75rem; /* preserves spacing from year */
+}
+
+.publication-arrow {
+    font-size: 1.1rem;
+}
 	
-  }
+}
 
-  /* <!-- Mobile Device CSS (Small Screens) --> */ 
+/* <!-- Mobile Device CSS (Small Screens) --> */ 
 
-  @media only screen and (min-width: 375px) and (max-device-width : 481px) {
+@media only screen and (min-width: 375px) and (max-device-width : 481px) {
 
-	/********* HEADER *********/
+/********* HEADER *********/
 
-	.header {
-		/* overflow: hidden; */
-		background-color: #141313;
-		/* background-color: blue; */
-		width: 100%;
-		height: 10%;
-		padding: 20px 10px;
-		z-index: 500;
-	}
+.header {
+	/* overflow: hidden; */
+	background-color: #141313;
+	/* background-color: blue; */
+	width: 100%;
+	height: 10%;
+	padding: 20px 10px;
+	z-index: 500;
+}
 
-	.header a.logo {
-		font-family: "Parable-Display-Regular";
-		font-size: 34px;
-		/* font-weight: bold; */
-		color: #E2E3E4;
-	}
+.header a.logo {
+	font-family: "Parable-Display-Regular";
+	font-size: 34px;
+	/* font-weight: bold; */
+	color: #E2E3E4;
+}
 
-	/* Float the menu section to the right */
-	.header-right {
-		float: right;
-		position: relative;
-		right: 0px;
-		pointer-events: visible;
-	}
+/* Float the menu section to the right */
+.header-right {
+	float: right;
+	position: relative;
+	right: 0px;
+	pointer-events: visible;
+}
 
 /********* SCROLLING TEXT *********/	
 
-	.title-container {
-        position: absolute;
-        left: 10px;
-        top: 68px;
-        display: flex;
-        color: #E2E3E4;
-        font-size: 12px;
-        /* font-family: "Parable-Text-Regular"; */
-        font-family: monospace;
-    }
-
-	.scroll-wrap {
-		display: none; /* FIX RESPONSIVENESS */
-	}
-
-  /********* LANDING FULLBLEED IMG *********/
-
-.full-bleed-img {
-  position: relative;
-  margin-top: 125px; /* matches previous top offset */
-  width: 100%;
-  height: calc(100vh - 125px); /* dynamic height minus the header */
-  background-image: linear-gradient(
-      to bottom,
-      rgba(20, 19, 19, 1) 0%,
-      rgba(20, 19, 19, 0.40) 80%,
-      rgba(20, 19, 19, 0) 100%
-    ),
-    url('/assets/images/third-texture-process.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: -1;
+.title-container {
+    position: absolute;
+    left: 10px;
+    top: 68px;
+    display: flex;
+    color: #E2E3E4;
+    font-size: 12px;
+    /* font-family: "Parable-Text-Regular"; */
+    font-family: monospace;
 }
 
+.scroll-wrap {
+	display: none; /* FIX RESPONSIVENESS */
+}
+
+/********* LANDING FULLBLEED IMG *********/
+
+.hero-wrapper {
+    background-image: linear-gradient(to bottom, rgba(20, 19, 19, 1) 0%, rgba(20, 19, 19, 0.55) 60%, rgba(20, 19, 19, 0) 100%), url(/assets/images/third-texture-process.png);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
 
 /********* PLACEHOLDER TEXT *********/	
-	.giant-text {
+
+	/* .giant-text {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		width: 100%;
 		position: fixed;
 		color: #E2E3E4;
-		/* font-family: "Parable-Display-Regular"; */
-		/* font-family: "Parable-Text-Regular"; */
 		font-family: "Millionaire-Script";
 		font-size: 2.8em;
 		text-align: center;
 		line-height: 145%;
 		margin-top: 50px;
-	}
+	} */
 
-  }
+/********* PUBLICATIONS SECTION *********/
+
+.publications-section {
+    position: absolute;
+    top: 75%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 90%;
+    max-width: 950px;
+    padding: 80px 16px;
+    background-color: transparent;
+}
+
+.publication-header {
+	font-size: 11px;
+  	padding-bottom: 6px;
+}
+
+/* .publication-header:nth-child(3) {
+    display: none;
+} */
+
+.publications-grid, .publication-row {
+    /* grid-template-columns: 26% 45% 10%;  */
+	grid-template-columns: 25% 50% 13% 7%;
+    padding: 0 5%;
+    margin: 0 auto;
+}
+
+.publication-cell {
+    font-family: "Parable-Text-Regular";
+    font-size: 15px;
+    color: #E2E3E4;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+/* Allow wrapping inside org and title only */
+.publication-cell:nth-child(1),
+.publication-cell:nth-child(2) {
+    white-space: normal;
+    word-wrap: break-word;
+    line-height: 1.45;
+}
+
+/* Hide year */
+/* .publication-cell:nth-child(3) {
+    display: none;
+} */
+
+.publication-cell:nth-child(4) {
+    white-space: nowrap;
+    justify-self: end;
+    align-self: center;
+    padding-left: 0.25rem;
+}
+
+.publication-title {
+    margin-right: 2rem;
+	padding-bottom: 0.65rem;
+	padding-top: 0.65rem;
+}
+
+.arrow {
+    font-size: 1.2rem;
+}
+
+.section-title {
+    max-width: 94%;
+    padding: 0 5%;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+
+}
 
 /* <!-- Mobile Device CSS (X-Small Screens) --> */ 
 
 @media only screen and (min-width: 320px) and (max-device-width : 376px) {
 
 
-	/********* HEADER *********/
+/********* HEADER *********/
 
-	.header {
-		/* overflow: hidden; */
-		background-color: #141313;
-		/* background-color: blue; */
-		width: 100%;
-		height: 10%;
-		padding: 20px 10px;
-		z-index: 500;
-	}
+.header {
+	/* overflow: hidden; */
+	background-color: #141313;
+	/* background-color: blue; */
+	width: 100%;
+	height: 10%;
+	padding: 20px 10px;
+	z-index: 500;
+}
 
-	.header a.logo {
-		font-family: "Parable-Display-Regular";
-		font-size: 26px !important;
-		/* font-weight: bold; */
-		color: #E2E3E4;
-	}
+.header a.logo {
+	font-family: "Parable-Display-Regular";
+	font-size: 26px !important;
+	/* font-weight: bold; */
+	color: #E2E3E4;
+}
 
-	/* Float the menu section to the right */
-	.header-right {
-		float: right;
-		position: relative;
-		right: 0px;
-		pointer-events: visible;
-	}
+/* Float the menu section to the right */
+.header-right {
+	float: right;
+	position: relative;
+	right: 0px;
+	pointer-events: visible;
+}
 
 /********* SCROLLING TEXT *********/	
 
-	.title-container {
-        position: absolute;
-        left: 8px;
-        top: 68px;
-        display: flex;
-        color: #E2E3E4;
-        font-size: 12px;
-        /* font-family: "Parable-Text-Regular"; */
-        font-family: monospace;
-    }
-
-	.scroll-wrap {
-		display: none; /* FIX RESPONSIVENESS */
-		height: 38px;
-		overflow: hidden;
-		text-align: center;
-		/* margin-top: 50px; */
-	}
-
-	.scroll-text span {
-		display: block;
-		font-size: 15px;
-		/* font-family: "Parable-Text-Regular"; */
-		font-family: monospace;
-		padding-top: 8px;
-		padding-bottom: 8px;
-		padding-left: 5px;
-		padding-right: 5px;
-	}
-
-  /********* LANDING FULLBLEED IMG *********/
-
-.full-bleed-img {
-  position: relative;
-  margin-top: 125px; /* matches previous top offset */
-  width: 100%;
-  height: calc(100vh - 125px); /* dynamic height minus the header */
-  background-image: linear-gradient(
-      to bottom,
-      rgba(20, 19, 19, 1) 0%,
-      rgba(20, 19, 19, 0.40) 80%,
-      rgba(20, 19, 19, 0) 100%
-    ),
-    url('/assets/images/third-texture-process.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: -1;
+.title-container {
+    position: absolute;
+    left: 8px;
+    top: 68px;
+    display: flex;
+    color: #E2E3E4;
+    font-size: 12px;
+    /* font-family: "Parable-Text-Regular"; */
+    font-family: monospace;
 }
 
+.scroll-wrap {
+	display: none; /* FIX RESPONSIVENESS */
+	height: 38px;
+	overflow: hidden;
+	text-align: center;
+	/* margin-top: 50px; */
+}
+
+.scroll-text span {
+	display: block;
+	font-size: 15px;
+	/* font-family: "Parable-Text-Regular"; */
+	font-family: monospace;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+/********* LANDING FULLBLEED IMG *********/
+
+.hero-wrapper {
+    background-image: linear-gradient(to bottom, rgba(20, 19, 19, 1) 0%, rgba(20, 19, 19, 0.55) 60%, rgba(20, 19, 19, 0) 100%), url(/assets/images/third-texture-process.png);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
 
 /********* PLACEHOLDER TEXT *********/	
+
+/* 
 	.giant-text {
 		display: flex;
 		justify-content: center;
@@ -510,13 +712,53 @@ body {
 		width: 100%;
 		position: fixed;
 		color: #E2E3E4;
-		/* font-family: "Parable-Display-Regular"; */
-		/* font-family: "Parable-Text-Regular"; */
 		font-family: "Millionaire-Script";
 		font-size: 2.8em;
 		text-align: center;
 		line-height: 145%;
-		/* margin-top: 50px !important; */
-	}
+	} */
+
+/********* PUBLICATIONS SECTION *********/
+
+.publications-section {
+    position: absolute;
+    top: 68%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 95%;
+    max-width: 950px;
+    padding: 80px 16px;
+    background-color: transparent;
+}
+
+/* .publications-grid,
+  .publication-row {
+    grid-template-columns: 1fr auto;
+  } */
+
+.publication-cell {
+    font-family: "Parable-Text-Regular";
+    font-size: 14px;
+    color: #E2E3E4;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+/* Year remains hidden */
+.publication-cell:nth-child(3) {
+    display: none;
+}
+
+/* Arrow aligned right and vertically centered */
+.publication-cell:nth-child(4) {
+    justify-self: center;
+    align-self: center;
+}
+
+/* Shorten title width by allowing tighter margin */
+.publication-title {
+    margin-right: 0.5rem;
+}
 
 }
