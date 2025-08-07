@@ -725,9 +725,14 @@ body {
 
 /********* PUBLICATIONS SECTION *********/
 
+#publications {
+  margin-top: 0;
+  padding-top: 0rem; /* Or whatever spacing feels balanced */
+}
+
 .publications-section {
     position: absolute;
-    top: 62%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
